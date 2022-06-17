@@ -3,12 +3,13 @@ import MyTimelineItem from "./MyTimeLineItem";
 import { Timeline } from "@material-ui/lab";
 
 const MyTimeLine = (props) => {
-  const { timeline } = props;
+  const { timeline,title } = props;
 
   return (
     <Timeline align="alternate">
-      {timeline.map((item) => (
-        <MyTimelineItem title={item} />
+      <h1>{title}</h1>
+      {timeline.map((item,i) => (
+        <MyTimelineItem key={i}title={item} />
       ))}
     </Timeline>
   );

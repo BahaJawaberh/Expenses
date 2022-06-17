@@ -36,6 +36,11 @@ const Body = (props) => {
         autoFocus
         value={input}
         onChange={(event) => setInput(event.target.value)}
+        onKeyDown={(event)=> {
+            if(event.key === "Enter"){
+                handleClick();
+            }
+        }}
       />
       <Button onClick={handleClick}>click me</Button>
       <MyTimeLine timeline={timeline} />

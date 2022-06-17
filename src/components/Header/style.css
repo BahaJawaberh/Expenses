@@ -1,7 +1,7 @@
 .body{
     border: 5px dotted red;
-    height: 75vh;
-    width: 88vw;
+    height: 100%;
+    width: 88%;
     display: grid;
     grid-template-rows: 1fr 4fr;
     row-gap: 20px;
